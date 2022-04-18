@@ -14,14 +14,22 @@
       .myfont {
         font-family: 'Comfortaa';
       }
+      .container {
+        max-width: 600px;
+      }
+      .responsive-iframe {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border: none;
+      }
     </style>
     <title>Väinön dymo</title>
   </head>
   <body>
     <div class="container">
-    <div class="row">
-    <div class="col"></div>
-    <div class="col-6">
       <h1 class="text-center">Väinön dymo</h1>
       <h2 class="text-center" id="tietoa-meista">Tietoa meistä</h2>
       <p class="myfont">
@@ -53,7 +61,8 @@
       </p>
       <hr>
       <div class="text-center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxib3grMRhB7UvBssjqo2doW8A-1XCTjOxrxuieS6y-f1N0w/viewform?embedded=true"
+        <iframe class="responsive-iframe"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScxib3grMRhB7UvBssjqo2doW8A-1XCTjOxrxuieS6y-f1N0w/viewform?embedded=true"
         width="500" height="900" frameborder="0" marginheight="0" marginwidth="0">
         Ladataan…
         </iframe>
@@ -67,9 +76,6 @@
           <small>&copy; Väinön dymo 2022</small>
         </div>
       </footer>
-    </div>
-    <div class="col"></div>
-    </div>
     </div>
   </body>
 </html>
